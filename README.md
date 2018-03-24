@@ -21,4 +21,4 @@
 
 ## Todo
 
-- [ ] Move to Carthage & Cocoapods
+- [ ] Add to Carthage & Cocoapods
