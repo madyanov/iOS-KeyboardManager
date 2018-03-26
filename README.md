@@ -11,13 +11,17 @@
 
 ## Properties
 
-    var spacing: CGFloat
+```swift
+var spacing: CGFloat
+```
 
 ## Methods
 
-    func start()
+```swift
+func start()
 
-    func stop()
+func stop()
+```
 
 ## Todo
 
