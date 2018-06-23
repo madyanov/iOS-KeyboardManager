@@ -85,10 +85,8 @@ extension KeyboardManager: UIGestureRecognizerDelegate {
     }
 
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        for type in [UIControl.self, UINavigationBar.self] {
-            if touch.view?.isKind(of: type) ?? false {
-                return false
-            }
+        for type in [UIControl.self, UINavigationBar.self] where touch.view?.isKind(of: type) ?? false {
+            return false
         }
 
         return true
@@ -102,7 +100,7 @@ private extension UIView {
         while parentResponder != nil {
             parentResponder = parentResponder?.next
 
-            if let viewController = parentResponder as? UIViewController {
+            if let viewController = parentResponder as? UIViewController, viewController.parent == nil {
                 return viewController
             }
         }
