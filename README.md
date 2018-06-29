@@ -12,14 +12,17 @@
 ## Properties
 
 ```swift
-var spacing: CGFloat
+// spacing between keyboard and active text field
+var spacing: CGFloat = 8
 ```
 
 ## Methods
 
 ```swift
+// start listen for keyboard notifications
 func start()
 
+// stop listen for keyboard notifications
 func stop()
 ```
 
