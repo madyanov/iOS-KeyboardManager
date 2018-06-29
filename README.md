@@ -19,10 +19,8 @@ var spacing: CGFloat = 8
 ## Methods
 
 ```swift
-// start listen for keyboard notifications
 func start()
 
-// stop listen for keyboard notifications
 func stop()
 ```
 
