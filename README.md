@@ -23,7 +23,3 @@ func start()
 
 func stop()
 ```
-
-## Todo
-
-- [ ] Add to Carthage & Cocoapods
