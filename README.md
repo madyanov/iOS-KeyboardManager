@@ -13,13 +13,15 @@
 
 ```swift
 // spacing between keyboard and active text field
-var spacing: CGFloat = 8
+var spacing: CGFloat { get set }
 ```
 
 ## Methods
 
 ```swift
+// start listening keyboard events
 func start()
 
+// stop listening keyboard events
 func stop()
 ```

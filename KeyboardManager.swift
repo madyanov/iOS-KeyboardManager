@@ -7,7 +7,14 @@
 
 import UIKit
 
-class KeyboardManager: NSObject {
+private protocol KeyboardManagerProtocol {
+    var spacing: CGFloat { get set }
+
+    func start()
+    func stop()
+}
+
+class KeyboardManager: NSObject, KeyboardManagerProtocol {
     var spacing: CGFloat = 8
 
     private weak var view: UIView?
